@@ -6,17 +6,27 @@
 
 </center>
 
+![gif-fpga-chromatic-tuner](https://user-images.githubusercontent.com/25698069/184216645-29b99c44-e32e-4934-b9d1-98a35f3fae36.gif)
+
+
 ## **Program Features**
 The chromatic tuner uses the onboard microphone of the Artix-A7 to identify any note played from the 3rd to the 9th octave. When a note is played into the microphone, the closest matching note is displayed on the LCD. To the right of the note, the error from this note is displayed in cents with the appropriate sign value. Below this, the error bar displays the error from this note and the direction of the error in a more visually friendly way. If the note played closely matches the nearest note, the error bar turns green, making it easy to determine when tuning is complete. It can measure notes in octaves 3-8 to an accuracy of +/- 10 cents. By default, it uses the frequency detected by the microphone to automatically select the best effective sampling frequency. There is also a menu to manually select a desired octave, which can be used to achieve the same effect. Additionally, there is a menu allowing the user to adjust the frequency of the note A4. By default, A4 is tuned to 440 Hz, but may be set anywhere between 420 and 460 Hz.
 
 ## **Menus and UI**
 The background and window colors utilize gray and white, while all text is printed in a bold red color. The red text easily contrasts with the window background colors, and the windows contrast well with the screen’s background color. Overall, this made the program results easier to interpret given the limited space on the LCD.
 
+![image](https://user-images.githubusercontent.com/25698069/184216055-b0073d91-d9cf-4b1a-8aae-016aa635131b.png)
+
+
 The ‘note’ window is always visible while the program runs, and will update while in either of the two menus. In the ‘note’ window the user sees the closest note to the detected frequency, as well as the calculated error from this note. Below this window, the error bar gives a graphical representation of the error, turning green when a note is closely matched.
 
-The first of the menus allows for tuning the frequency value of the note A4. In the ‘Tune A4’ menu, the current value and new value of the A4 frequency are displayed in Hz. This menu can be accessed by pressing the up push button, or with a counterclockwise twist of the rotary encoder. The new value may be increased or decreased using the left and right push buttons or by twisting the rotary encoder counterclockwise or clockwise. To confirm the new value, either press the center push button or press on
-  
-the rotary encoder. To close the menu without applying the new selection, press the up push button again. This frequency value for A4 may not be set lower than 420 Hz or higher than 460 Hz.
+![image](https://user-images.githubusercontent.com/25698069/184216426-557fe21a-df66-4837-8184-7cbbf71b67af.png)
+
+
+The first of the menus allows for tuning the frequency value of the note A4. In the ‘Tune A4’ menu, the current value and new value of the A4 frequency are displayed in Hz. This menu can be accessed by pressing the up push button, or with a counterclockwise twist of the rotary encoder. The new value may be increased or decreased using the left and right push buttons or by twisting the rotary encoder counterclockwise or clockwise. To confirm the new value, either press the center push button or press on the rotary encoder. To close the menu without applying the new selection, press the up push button again. This frequency value for A4 may not be set lower than 420 Hz or higher than 460 Hz.
+
+![image](https://user-images.githubusercontent.com/25698069/184216368-04f8d73e-8b88-4794-be0a-66b9996ce741.png)
+
 
 The second menu is used to select an octave to be used for tuning. In the ‘Select Octave’ menu, the current and new value for the desired octave are displayed in the window. The menu can be accessed by pressing the down push button or with a clockwise twist of the rotary encoder. The selection can be changed using the left and right push buttons, as well as clockwise/counterclockwise twists of the rotary encoder. The new selection is applied with a press of the center push button or press of the rotary encoder. To close the menu without applying the new selection, press the down push button. A selection of ‘A’ causes the program to determine the correct octave automatically.
 
