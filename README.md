@@ -1,10 +1,4 @@
-<center>
-
-# **Noah Corona**
-
-## **ECE 153A Lab:** *Chromatic Tuner*
-
-</center>
+# **ECE 153A Lab:** *Chromatic Tuner*
 
 ![gif-fpga-chromatic-tuner](https://user-images.githubusercontent.com/25698069/184216645-29b99c44-e32e-4934-b9d1-98a35f3fae36.gif)
 
